@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ImageKitProvider } from "@imagekit/next";
 import { ThemeProvider } from "next-themes";
+import { Header } from "@/components/layouts/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute={"class"}>
           <ImageKitProvider urlEndpoint="https://ik.imagekit.io/thakur00">
+            <Header />
             {children}
           </ImageKitProvider>
         </ThemeProvider>
