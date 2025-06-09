@@ -12,6 +12,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { LogOutIcon } from "lucide-react";
 import { Image } from "@imagekit/next";
+import { Bookmarks } from "./bookmarks";
 export const Header = () => {
   return (
     <header className="h-16 flex items-center">
@@ -56,6 +57,7 @@ const HeaderAuth = async () => {
             <Separator />
 
             {/* <Bookmarks /> */}
+            <Bookmarks />
             <form action={logout}>
               <button
                 className="flex w-full  hover:bg-muted items-center gap-1 p-1"
@@ -75,6 +77,5 @@ const HeaderAuth = async () => {
     </div>
   );
 };
-
 
 //Header Auth
